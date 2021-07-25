@@ -12,7 +12,8 @@ class QuestionOption extends Component {
   optionSelected = event => {
     // console.log(event.target)
     const {optionWasClicked} = this.props
-    console.log(event)
+    // console.log(event)
+    console.log('being clicked')
     optionWasClicked(event.target.id)
   }
 

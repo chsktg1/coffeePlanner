@@ -30,8 +30,11 @@ class CoffeePlanner extends Component {
   }
 
   displayer = argument => {
-    console.log('in main displayer', argument)
+    // console.log('in main displayer', argument)
     const idToAdd = parseInt(argument.slice(argument.indexOf('m') + 1), 10)
+    console.log(
+      'from diaplyer in CoffeePlanner:- I have all the data of which being clicked',
+    )
     if (idToAdd < 3) {
       this.setState({firstRow: idToAdd})
     } else if (idToAdd < 5) {
